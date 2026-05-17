@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anand Jha</string>
+    <string name="app_tagline">DevOps Engineer · Kathmandu, Nepal</string>
+    <string name="hero_name">Anand Mohan Jha</string>
+    <string name="hero_role">DevOps Engineer &amp; Full-Stack Developer</string>
+    <string name="hero_location">📍 Shankamul, Kathmandu, Nepal</string>
+    <string name="hero_email">anandjha9816@gmail.com</string>
+    <string name="hero_phone">+977 9816810289</string>
+    <string name="hero_github">github.com/anandzhaa</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_skills">Skills</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_contact">Contact</string>
+    <string name="send_message">Send Message</string>
+    <string name="available_badge">🟢 Open to Work</string>
+</resources>

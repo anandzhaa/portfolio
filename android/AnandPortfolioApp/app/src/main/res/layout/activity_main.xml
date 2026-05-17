@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ====== HERO SECTION ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_dark"
+            android:padding="24dp"
+            android:paddingTop="56dp">
+
+            <!-- Available Badge -->
+            <TextView
+                android:id="@+id/tvAvailBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟢  Open to Work"
+                android:textSize="12sp"
+                android:textColor="@color/accent_green"
+                android:fontFamily="monospace"
+                android:background="@drawable/badge_bg_green"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvHeroName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anand\nMohan Jha"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingMultiplier="1.05"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Role -->
+            <TextView
+                android:id="@+id/tvHeroRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DevOps Engineer · Full-Stack Developer"
+                android:textSize="15sp"
+                android:textColor="@color/accent_blue"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvHeroDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aspiring DevOps Engineer from Kathmandu, Nepal. Skilled in Docker, Kubernetes, CI/CD, Linux, Prometheus, and Grafana. Passionate about scalable systems and infrastructure automation."
+                android:textSize="14sp"
+                android:textColor="@color/text_muted"
+                android:lineSpacingMultiplier="1.6"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Hero Buttons -->
+            <LinearLayout
+                android:id="@+id/heroButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="28dp">
+
+                <Button
+                    android:id="@+id/btnGitHub"
+                    style="@style/ButtonPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="GitHub"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <Button
+                    android:id="@+id/btnContactMe"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Contact Me"
+                    android:textSize="12sp"
+                    android:textColor="@color/accent_blue"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="0.06"
+                    android:background="@drawable/btn_outline"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+
+            <!-- Contact Chips Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/btnEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📧 Email"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_muted"
+                    android:background="@drawable/chip_bg"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="7dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <TextView
+                    android:id="@+id/btnPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📞 Call"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_muted"
+                    android:background="@drawable/chip_bg"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="7dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/border_color" android:layout_marginHorizontal="24dp"/>
+
+        <!-- ====== SKILLS SECTION ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_dark"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="// SKILLS"
+                android:textSize="11sp"
+                android:textColor="@color/accent_blue"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.14"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Toolkit"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Skill Card: DevOps -->
+            <androidx.cardview.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🐳  Container &amp; DevOps"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"/>
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Docker"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kubernetes"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CI/CD"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Linux"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GitHub Actions"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Skill Card: Monitoring -->
+            <androidx.cardview.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📊  Monitoring &amp; Observability"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"/>
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prometheus"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Grafana"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Metrics &amp; Alerting"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Skill Card: Programming -->
+            <androidx.cardview.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="💻  Programming &amp; Databases"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"/>
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Python"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JavaScript"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MongoDB"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MySQL"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Node.js"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="React"/>
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/border_color" android:layout_marginHorizontal="24dp"/>
+
+        <!-- ====== PROJECTS SECTION ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_dark"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="// PROJECTS"
+                android:textSize="11sp"
+                android:textColor="@color/accent_blue"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.14"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Things I've Built"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Project Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProject1"
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:clickable="true"
+                android:focusable="true">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="01 / featured"
+                        android:textSize="11sp" android:textColor="@color/text_dim"
+                        android:fontFamily="monospace" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Full-Stack Deployment with Docker, CI/CD &amp; Monitoring"
+                        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.3" android:layout_marginBottom="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="React + Node.js + MongoDB deployed with Docker Compose, automated CI/CD via GitHub Actions, Prometheus + Grafana monitoring."
+                        android:textSize="13sp" android:textColor="@color/text_muted"
+                        android:lineSpacingMultiplier="1.5" android:layout_marginBottom="14dp"/>
+                    <com.google.android.material.chip.ChipGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Docker"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GitHub Actions"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prometheus"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MongoDB"/>
+                    </com.google.android.material.chip.ChipGroup>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="→ View on GitHub"
+                        android:textSize="12sp" android:textColor="@color/accent_blue" android:fontFamily="monospace"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Project Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProject2"
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:clickable="true"
+                android:focusable="true">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="02 / frontend"
+                        android:textSize="11sp" android:textColor="@color/text_dim"
+                        android:fontFamily="monospace" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Skincare &amp; Makeup E-Commerce Platform"
+                        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:lineSpacingMultiplier="1.3" android:layout_marginBottom="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Responsive front-end retail interface with intuitive navigation, dynamic product displays and optimized web assets."
+                        android:textSize="13sp" android:textColor="@color/text_muted"
+                        android:lineSpacingMultiplier="1.5" android:layout_marginBottom="14dp"/>
+                    <com.google.android.material.chip.ChipGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HTML/CSS"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JavaScript"/>
+                        <com.google.android.material.chip.Chip style="@style/TagChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Responsive Design"/>
+                    </com.google.android.material.chip.ChipGroup>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="→ View on GitHub"
+                        android:textSize="12sp" android:textColor="@color/accent_blue" android:fontFamily="monospace"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- View All Button -->
+            <Button
+                android:id="@+id/btnViewAllProjects"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="View All on GitHub"
+                android:textSize="12sp"
+                android:textColor="@color/accent_blue"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:background="@drawable/btn_outline"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/border_color" android:layout_marginHorizontal="24dp"/>
+
+        <!-- ====== EXPERIENCE SECTION ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_dark"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="// EXPERIENCE"
+                android:textSize="11sp"
+                android:textColor="@color/accent_blue"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.14"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional Journey"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Exp 1 -->
+            <androidx.cardview.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Jan 2025 – Jun 2025"
+                        android:textSize="11sp" android:textColor="@color/accent_blue" android:fontFamily="monospace"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Full-Stack Developer"
+                        android:textSize="17sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:layout_marginBottom="3dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🏢  Mithila Tech Ventures · Kathmandu"
+                        android:textSize="13sp" android:textColor="@color/text_muted" android:fontFamily="monospace"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="▸ Built and maintained production web applications\n▸ Git version control, code reviews, branching strategies\n▸ Linux server administration and deployment tasks\n▸ Improved frontend responsiveness and performance"
+                        android:textSize="13sp" android:textColor="@color/text_muted" android:lineSpacingMultiplier="1.6"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Exp 2 -->
+            <androidx.cardview.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Jan 2026 – Mar 2026"
+                        android:textSize="11sp" android:textColor="@color/accent_blue" android:fontFamily="monospace"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="DevOps Trainee"
+                        android:textSize="17sp" android:textStyle="bold" android:textColor="@color/white"
+                        android:layout_marginBottom="3dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🎓  Broadway Infosys · Kathmandu"
+                        android:textSize="13sp" android:textColor="@color/text_muted" android:fontFamily="monospace"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="▸ Intensive 3-month DevOps training program\n▸ Docker, Kubernetes, CI/CD, cloud infrastructure\n▸ Prometheus + Grafana monitoring stacks\n▸ Industry-standard DevOps deployment practices"
+                        android:textSize="13sp" android:textColor="@color/text_muted" android:lineSpacingMultiplier="1.6"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- ====== FOOTER / CTA ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_card"
+            android:padding="28dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let's Build Something Together"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actively seeking DevOps, Cloud, or Software Engineering opportunities"
+                android:textSize="13sp"
+                android:textColor="@color/text_muted"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnDownloadCV"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Download CV"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2026 Anand Mohan Jha · anandjha9816@gmail.com"
+                android:textSize="11sp"
+                android:textColor="@color/text_dim"
+                android:fontFamily="monospace"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical"
+        android:background="@color/bg_card">
+        <Button android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp"
+            android:text="←" android:textSize="20sp" android:background="transparent" android:textColor="@color/accent_blue"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Send Message" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white"
+            android:gravity="center" android:layout_marginStart="20dp"/>
+        <View android:layout_width="40dp" android:layout_height="1dp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="13sp" android:padding="12dp" android:visibility="gone"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Your Name" android:textSize="12sp" android:textColor="@color/accent_blue"
+                android:fontFamily="monospace" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="48dp"
+                android:background="@color/bg_card" android:textColor="@color/text_primary" android:padding="12dp"
+                android:hint="John Doe" android:textColorHint="@color/text_dim" android:layout_marginBottom="18dp"
+                android:importantForAutofill="no" android:inputType="text"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Email Address" android:textSize="12sp" android:textColor="@color/accent_blue"
+                android:fontFamily="monospace" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="48dp"
+                android:background="@color/bg_card" android:textColor="@color/text_primary" android:padding="12dp"
+                android:hint="john@example.com" android:textColorHint="@color/text_dim" android:layout_marginBottom="18dp"
+                android:importantForAutofill="no" android:inputType="emailAddress"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Subject" android:textSize="12sp" android:textColor="@color/accent_blue"
+                android:fontFamily="monospace" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etSubject" android:layout_width="match_parent" android:layout_height="48dp"
+                android:background="@color/bg_card" android:textColor="@color/text_primary" android:padding="12dp"
+                android:hint="Job Opportunity" android:textColorHint="@color/text_dim" android:layout_marginBottom="18dp"
+                android:importantForAutofill="no" android:inputType="text"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Message" android:textSize="12sp" android:textColor="@color/accent_blue"
+                android:fontFamily="monospace" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/etMessage" android:layout_width="match_parent" android:layout_height="140dp"
+                android:background="@color/bg_card" android:textColor="@color/text_primary" android:padding="12dp"
+                android:hint="Tell me about the opportunity..." android:textColorHint="@color/text_dim"
+                android:importantForAutofill="no" android:inputType="textMultiLine" android:gravity="top"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp" android:background="@color/bg_card">
+        <Button android:id="@+id/btnSend" android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="Send Message →" android:textColor="@color/bg_dark" android:textSize="13sp"
+            android:textStyle="bold" android:background="@color/accent_blue" android:fontFamily="monospace"/>
+    </LinearLayout>
+</LinearLayout>

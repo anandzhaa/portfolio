@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp">
+
+    <!-- Logo / Icon Area -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{ }"
+        android:textSize="56sp"
+        android:textColor="@color/accent_blue"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/splashName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anand Mohan Jha"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:visibility="invisible"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Role -->
+    <TextView
+        android:id="@+id/splashRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DevOps Engineer"
+        android:textSize="16sp"
+        android:textColor="@color/accent_blue"
+        android:fontFamily="monospace"
+        android:visibility="invisible"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tag -->
+    <TextView
+        android:id="@+id/splashTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kathmandu, Nepal 🇳🇵"
+        android:textSize="13sp"
+        android:textColor="@color/text_muted"
+        android:fontFamily="monospace"
+        android:visibility="invisible"/>
+
+</LinearLayout>

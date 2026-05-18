@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: anand-portfolio
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MONGODB_URI
+        scope: build
+        sync: false
+      - key: ADMIN_SECRET
+        scope: build
+        sync: false
+    autoDeploy: false
